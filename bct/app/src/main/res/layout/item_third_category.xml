@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_third_category"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdv_item_home_plate_pic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/tv_third_category"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/category_name_bg"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="2"
+        android:minHeight="37dp"
+        android:paddingEnd="5dp"
+        android:paddingStart="5dp"
+        android:textColor="@color/main_channel_textcolor"
+        android:textSize="12sp" />
+</LinearLayout>
+
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+	<TextView
+		android:id="@+id/second_category_name"
+		android:layout_width="wrap_content"
+		android:layout_height="40dp"
+		android:paddingStart="8dp"
+		android:paddingEnd="8dp"
+		android:gravity="center"
+		android:textColor="@color/middle_gray"
+		android:textSize="14sp"/>
+
+	<com.common.view.GridViewForInner
+		android:id="@+id/second_category_detail"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:horizontalSpacing="8dp"
+		android:verticalSpacing="8dp"
+		android:numColumns="3"/>
+</LinearLayout>

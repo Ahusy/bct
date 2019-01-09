@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/common_bg_color"
+    android:orientation="vertical">
+
+    <com.youth.banner.Banner
+        android:id="@+id/home_banner"
+        android:layout_width="match_parent"
+        android:layout_height="225dp" />
+
+    <com.bigkoo.convenientbanner.ConvenientBanner
+        android:id="@+id/cb_home_plate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" />
+
+    <View style="@style/person_split_margin_top" />
+
+    <FrameLayout
+        android:id="@+id/home_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.common.view.GridViewForInner
+        android:id="@+id/home_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:focusable="false"
+        android:gravity="center_horizontal"
+        android:listSelector="@color/transparent"
+        android:numColumns="4"
+        android:paddingBottom="20dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/transparent"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="热门品牌"
+            android:textColor="@color/primary_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/home_brand_more"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:drawableEnd="@drawable/hujia_more"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="更多"
+            android:textColor="@color/home_more_textcolor"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/home_brand_list"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/common_bg_color"
+        android:paddingEnd="0dp"
+        android:paddingStart="12dp"
+        android:scrollbars="none"
+        android:visibility="gone" />
+</LinearLayout>
